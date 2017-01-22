@@ -1,0 +1,55 @@
+body{
+   overflow-x: hidden;
+   min-height: 300vh; /* TEMP */
+}
+
+.image-bg{
+   display: block;
+   background-repeat: no-repeat;
+   background-size: cover}
+
+/* Index */
+#index_header{
+   position: relative;
+   padding: 15rem 0}
+
+#index_header .bestoon-prev{
+   position: absolute;
+   top: 12rem; left: 60%;
+   height: 580px; width: 870px;
+   background-image: url('')}
+
+#index_header h1{
+   font-weight: 400;
+   line-height: 1.5;
+   margin: 0 0 1.75rem}
+
+
+/* On Laptop */
+@media screen and (min-width: 992px) and (max-width: 1199px) {}
+
+/* On Tablet */
+@media screen and (min-width:768px) and (max-width: 991px) {
+
+   #index_header .bestoon-prev{
+      top: auto;
+      left: 0; right: 0;
+      margin-top: 12rem;
+      width: 100%; height: auto;
+      padding-top: 66.66%}
+
+}
+
+/* On Mobile */
+@media screen and (max-width: 767px) {
+
+   #index_header{padding: 6rem 0 7rem}
+
+   #index_header .bestoon-prev{
+      top: auto;
+      left: 0; right: 0;
+      margin-top: 6rem;
+      width: 100%; height: auto;
+      padding-top: 66.66%}
+
+}
