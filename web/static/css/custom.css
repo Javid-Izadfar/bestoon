@@ -12,18 +12,52 @@ body{
 #index_header{
    position: relative;
    padding: 15rem 0}
-
 #index_header .bestoon-prev{
+   z-index: 2;
    position: absolute;
    top: 12rem; left: 60%;
    height: 580px; width: 870px;
    background-image: url('')}
-
 #index_header h1{
    font-weight: 400;
    line-height: 1.5;
    margin: 0 0 1.75rem}
 
+.info-section{
+   padding: 8rem 0 4rem;
+   position: relative;
+   background: -moz-linear-gradient(35deg, #e0e0e0 0%, #eeeeee 70%, #eeeeee 100%);
+   background: -webkit-gradient(left bottom, right top, color-stop(0%, #e0e0e0), color-stop(70%, #eeeeee), color-stop(100%, #eeeeee));
+   background: -webkit-linear-gradient(35deg, #e0e0e0 0%, #eeeeee 70%, #eeeeee 100%);
+   background: -o-linear-gradient(35deg, #e0e0e0 0%, #eeeeee 70%, #eeeeee 100%);
+   background: -ms-linear-gradient(35deg, #e0e0e0 0%, #eeeeee 70%, #eeeeee 100%);
+   background: linear-gradient(35deg, #e0e0e0 0%, #eeeeee 70%, #eeeeee 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#eeeeee', GradientType=1 )}
+.info-section h2{
+   position: relative;
+   padding-bottom: 1.5rem;
+   margin-bottom: 1.5rem;
+   font-weight: 400}
+.info-section h2::after{
+   content: '-';
+   color: transparent;
+   border-bottom: 2px solid #0277bd;
+   width: 4rem;
+   position: absolute;
+   padding-bottom: 1.5rem;
+   top: 0; right: 0}
+
+#index_about::before{
+   background: url('../img/jadi.png') no-repeat;
+   background-position-x: 2rem;
+   background-size: contain;
+   position: absolute;
+   top: 0; left: 0;
+   display: block;
+   content: '';
+   height: 100%; width: 100%;
+   -webkit-filter: grayscale(0.5) opacity(0.2) blur(0.5px);
+           filter: grayscale(0.5) opacity(0.2) blur(0.5px);}
 
 /* On Laptop */
 @media screen and (min-width: 992px) and (max-width: 1199px) {}
