@@ -57,7 +57,14 @@ body{
    content: '';
    height: 100%; width: 100%;
    -webkit-filter: grayscale(0.5) opacity(0.2) blur(0.5px);
-           filter: grayscale(0.5) opacity(0.2) blur(0.5px);}
+           filter: grayscale(0.5) opacity(0.2) blur(0.5px)}
+
+#index_statics ul{
+   padding: 2em 0;
+   margin: 0;
+   list-style: none}
+#index_statics ul li a{font-size: 48px}
+#index_statics ul li span{display: block}
 
 /* On Laptop */
 @media screen and (min-width: 992px) and (max-width: 1199px) {}
