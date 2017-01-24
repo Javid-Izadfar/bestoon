@@ -68,6 +68,26 @@ body{
 #index_statics ul li a{font-size: 48px}
 #index_statics ul li span{display: block}
 
+#index_how{padding: 1rem 0}
+#index_how .gb_lightbulb_outline{padding: 1rem}
+#index_how p:first-of-type{
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 2}
+#index_how ul{
+  padding: 0;
+  margin: 0;
+  list-style: none}
+#index_how li{
+  padding: 1em;
+  display: inline-block}
+#index_how li a{
+  display: inline-block}
+#index_how li a .gb{padding: .725em}
+#index_how li span{
+  padding: .725em .725em 0;
+  display: block}
+
 #index_clients ul{
    margin: 0;
    padding: 1.5rem;
