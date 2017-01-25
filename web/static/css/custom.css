@@ -1,6 +1,6 @@
 body{
    overflow-x: hidden;
-   min-height: 300vh; /* TEMP */
+   min-height: 500vh; /* TEMP */
 }
 
 .image-bg{
@@ -100,6 +100,15 @@ body{
 #index_clients ul li a span{
    padding-top: .5em;
    display: block}
+
+
+#footer_see_github{
+   border-top-style: solid;
+   border-top-width: 6rem;
+   padding: 3rem 0}
+#footer_see_github h2{font-weight: 400}
+#footer_see_github a.button{margin: 2rem auto 0;}
+#footer_see_github a.button .gb{margin-left: .5rem}
 
 /* On Laptop */
 @media screen and (min-width: 992px) and (max-width: 1199px) {}
