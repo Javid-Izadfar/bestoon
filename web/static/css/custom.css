@@ -42,7 +42,7 @@ body{
 .info-section h2::after{
    content: '-';
    color: transparent;
-   border-bottom: 2px solid #0277bd;
+   border-bottom: 2px solid #4caf50;
    width: 4rem;
    position: absolute;
    padding-bottom: 1.5rem;
@@ -58,8 +58,8 @@ body{
    display: block;
    content: '';
    height: 100%; width: 100%;
-   -webkit-filter: grayscale(0.5) opacity(0.2) blur(0.5px);
-           filter: grayscale(0.5) opacity(0.2) blur(0.5px)}
+   -webkit-filter: grayscale(0.5) opacity(0.2);
+           filter: grayscale(0.5) opacity(0.2)}
 
 #index_statics ul{
    padding: 2em 0;
