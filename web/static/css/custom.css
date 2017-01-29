@@ -105,6 +105,16 @@ body{
    padding-top: .5em;
    display: block}
 
+#header_navbar .container{position: relative}
+#header_navbar.super-thick-navbar .logo{height: 75px}
+#header_navbar.super-thick-navbar .button-wrapper{top: 19px}
+#header_navbar .logo{float: right}
+#header_navbar .logo a{padding: 0 12px !important}
+#header_navbar .button-wrapper{
+   position: absolute;
+   top: 12px; left: 12px;
+   margin-top: -8px}
+
 #footer_links_out{padding: 2rem 0;}
 #footer_links_out h4,
 #footer_links_out ul li p{
