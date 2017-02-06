@@ -1,21 +1,40 @@
 body{
    overflow-x: hidden;
-   min-height: 100vh;
-}
+   min-height: 100vh}
 
 .image-bg{
    display: block;
    background-repeat: no-repeat;
    background-size: cover}
 .darken{
-   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%);
+   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .15) 0%, rgba(0, 0, 0, .15) 100%);
+   background-image: linear-gradient(to right, rgba(0, 0, 0, .15) 0%, rgba(0, 0, 0, .15) 100%);
    background-blend-mode: darken}
 .no-margin{margin: 0}
+.one-line{
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis}
 
 /* Index */
 #index_header{
    position: relative;
    padding: 15rem 0}
+#index_header:before{
+   content: '';
+   height: 100%; width: 100%;
+   position: absolute;
+   top: 0; right: 0; left: 0;
+   margin: auto;
+   background: #212121;
+   background-repeat: no-repeat !important;
+   background: -webkit-radial-gradient(center, ellipse contain, rgba(76,175,79,1) 0%, rgba(58,145,62,.23) 60%, rgba(46,125,50,0) 100%), -moz-radial-gradient(center, ellipse contain, rgba(76,175,79,.5) 0%, rgba(58,145,62,.13) 50%, rgba(46,125,50,0) 90%);
+   background: radial-gradient(center, ellipse contain, rgba(76,175,79,1) 0%, rgba(58,145,62,.23) 60%, rgba(46,125,50,0) 100%), -moz-radial-gradient(center, ellipse contain, rgba(76,175,79,.5) 0%, rgba(58,145,62,.13) 50%, rgba(46,125,50,0) 90%);
+   background-blend-mode: darken;
+   background-position-x: center;
+   background-position-y: -510px;
+   -webkit-filter: blur(10px);
+           filter: blur(10px)}
 #index_header .bestoon-prev{
    z-index: 2;
    position: absolute;
@@ -30,13 +49,8 @@ body{
 .info-section{
    padding: 5rem 0 4rem;
    position: relative;
-   background: -moz-linear-gradient(35deg, #e0e0e0 0%, #eeeeee 70%, #eeeeee 100%);
-   background: -webkit-gradient(left bottom, right top, color-stop(0%, #e0e0e0), color-stop(70%, #eeeeee), color-stop(100%, #eeeeee));
-   background: -webkit-linear-gradient(35deg, #e0e0e0 0%, #eeeeee 70%, #eeeeee 100%);
-   background: -o-linear-gradient(35deg, #e0e0e0 0%, #eeeeee 70%, #eeeeee 100%);
-   background: -ms-linear-gradient(35deg, #e0e0e0 0%, #eeeeee 70%, #eeeeee 100%);
-   background: linear-gradient(35deg, #e0e0e0 0%, #eeeeee 70%, #eeeeee 100%);
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#eeeeee', GradientType=1 )}
+   background: -webkit-linear-gradient(55deg, #e0e0e0 0%, #eeeeee 70%, #eeeeee 100%);
+   background: linear-gradient(35deg, #e0e0e0 0%, #eeeeee 70%, #eeeeee 100%);}
 .info-section h2{
    position: relative;
    padding-bottom: 1.5rem;
@@ -49,8 +63,7 @@ body{
    border-bottom: 2px solid #4caf50;
    width: 4rem;
    position: absolute;
-   padding-bottom: 1.5rem;
-   top: 0; right: 0}
+   bottom: 0; right: 0}
 
 #index_about{padding: 9rem 0 5rem}
 #index_about::before{
@@ -62,8 +75,8 @@ body{
    display: block;
    content: '';
    height: 100%; width: 100%;
-   -webkit-filter: grayscale(0.5) opacity(0.2);
-           filter: grayscale(0.5) opacity(0.2)}
+   -webkit-filter: grayscale(.5) opacity(.2);
+           filter: grayscale(.5) opacity(.2)}
 
 #index_statics ul{
    padding: 2em 0;
@@ -74,6 +87,7 @@ body{
 
 #index_how{padding: 1rem 0}
 #index_how .gb_lightbulb_outline{padding: 1rem}
+#index_about p{text-shadow: 0 0 1px #e0e0e0, 0 0 7px #e0e0e0, 0 0 10px #e0e0e0}
 #index_how p:first-of-type{
   font-size: 1rem;
   margin-bottom: 1rem;
@@ -101,6 +115,7 @@ body{
    padding: 1em 0;
    display: block}
 #index_clients ul li a img{padding: 1.5em 4em 1em}
+#index_clients ul li a b{display: block}
 #index_clients ul li a span{
    padding-top: .5em;
    display: block}
@@ -119,20 +134,20 @@ body{
 #footer_links_out h4,
 #footer_links_out ul li p{
    font-weight: 600;
-   margin: 0.375rem 0}
+   margin: .375rem 0}
 #footer_links_out ul{
    margin: 0;
    list-style: none}
 #footer_links_out ul li p{
    position: relative;
-   padding-bottom: 0.375rem}
+   padding-bottom: .375rem}
 #footer_links_out ul li p::after{
    content: '-';
    color: transparent;
    border-bottom: 2px solid #4caf50;
    width: 2rem;
    position: absolute;
-   padding-bottom: 0.375rem;
+   padding-bottom: .375rem;
    top: 0; left: 0}
 #footer_links_out ul li a.small,
 #footer_links_out ul li span.small{display: block}
@@ -160,25 +175,56 @@ body{
 /* On Tablet */
 @media screen and (min-width:768px) and (max-width: 991px) {
 
+   #index_header::before{background-position-y: -750px}
+   #index_header{
+      padding: 15rem 0 0;
+      border-bottom: solid 6rem}
    #index_header .bestoon-prev{
-      top: auto;
+      display: block;
+      margin: auto;
+      width: calc(100% - 2rem); height: auto;
+      position: relative;
+      top: 6rem;
       left: 0; right: 0;
-      margin-top: 12rem;
-      width: 100%; height: auto;
-      padding-top: 66.66%}
+      padding-top: 66.666%}
+
+   #index_about::before{background-position-x: 0}
+
+   #index_clients ul li a img {padding: .5em 3em 1em}
 
 }
 
 /* On Mobile */
 @media screen and (max-width: 767px) {
 
-   #index_header{padding: 6rem 0 7rem}
-
+   #index_header::before{
+      background-position-y: -460px;
+      -webkit-transform: scale(1.5);
+              transform: scale(1.5)}
+   #index_header{
+      padding: 8rem 0 0;
+      border-bottom: solid 6rem}
    #index_header .bestoon-prev{
-      top: auto;
+      display: block;
+      margin: auto;
+      width: calc(100% - 2rem); height: auto;
+      position: relative;
+      top: 6rem;
       left: 0; right: 0;
-      margin-top: 6rem;
-      width: 100%; height: auto;
-      padding-top: 66.66%}
+      padding-top: 66.666%}
+
+   #index_about{padding: 4rem 0 16rem}
+   #index_about::before{
+      background-position-x: center;
+      background-position-y: bottom}
+
+   #index_clients ul li{padding: .5rem !important}
+   #index_clients ul li a img{padding: 0 5vw 1em}
+   #index_clients ul li a b{
+      white-space: normal;
+      line-height: 1rem;
+      height: 2rem;
+      padding: 0 5vw}
+   #index_clients ul li a span{padding: .5rem 5vw 0}
 
 }
