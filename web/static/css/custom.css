@@ -120,6 +120,29 @@ body{
    padding-top: .5em;
    display: block}
 
+/* Register */
+#register_header{padding: 10rem 0 12rem}
+#register_header h1{
+   font-weight: 400;
+   line-height: 1.5;
+   margin: 0 0 0.75rem}
+#register_form form{
+   min-height: 20rem;
+   margin-top: -8rem;
+   margin-bottom: 4rem}
+#register_form form .recaptcha-wrapper{
+   display: table;
+   width: 100%;
+   padding: 1.5rem 2.8125rem 0.75rem 0}
+#register_form form .recaptcha-wrapper span,
+#register_form form .recaptcha-wrapper .g-recaptcha{
+   display: table-cell;
+   vertical-align: middle}
+#register_form form .recaptcha-wrapper span{padding-left: 1.5rem}
+#register_form form .recaptcha-wrapper .g-recaptcha{float: left}
+#register_form form .button-wrapper{padding: 1.5rem 1.5rem 0}
+
+/* Header */
 #header_navbar .container{position: relative}
 #header_navbar.super-thick-navbar .logo{height: 75px}
 #header_navbar.super-thick-navbar .button-wrapper{top: 19px}
@@ -130,6 +153,7 @@ body{
    top: 12px; left: 12px;
    margin-top: -8px}
 
+/* Footer */
 #footer_links_out{padding: 2rem 0;}
 #footer_links_out h4,
 #footer_links_out ul li p{

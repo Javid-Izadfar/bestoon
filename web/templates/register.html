@@ -1,0 +1,56 @@
+{% extends "template.html"%}
+{% load staticfiles %}
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+{% block content %}
+<main>
+	<header id="register_header" class="joqd grey-darken-4 grey-lighten-2-border">
+		<div class="joqd container">
+			<div class="joqd row">
+				<div class="joqd desktop-10 laptop-10 tablet-12 mobile-12">
+					<h1>ثبت نام</h1>
+					<p>اگر اینجا هستین حتما می دونین ماجرا چیه، برای عضو شدن از فرم زیر شروع کنین.</p>
+					<p>البته این فعلا یک سیستم شخصی است و این یک نکته مثبته: من این رو برای استفاده خودم توسعه می دم و در نتیجه دائما باید برای یک استفاده کننده واقعی بهینه بشه. اگر شما هم گپ یا پیشنهادی درموردش داشتین <a href="#" class="joqd link green-text green-darken-1-text-hover">اینجا بنویسین و خونده خواهد شد</a>.</p>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section id="register_form" class="joqd grey-lighten-2">
+		<div class="joqd container">
+			<div class="joqd row">
+				<form action="" class="joqd desktop-10 desktop-push-1 white soft-corner elevate-2">
+
+					<div class="joqd desktop-6 desktop-push-1 laptop-7 laptop-push-1 tablet-8 mobile-12">
+						<div class="joqd input-field">
+							<i class="joqd prefix grey-text gb gb_person"></i>
+							<input id="Username" type="text" class="joqd input thin-bottom-border grey-border">
+							<label for="Username" class="joqd grey-text">نام کاربری</label>
+						</div>
+						<div class="joqd input-field">
+							<i class="joqd prefix grey-text gb gb_email"></i>
+							<input id="Email" type="email" class="joqd input thin-bottom-border grey-border">
+							<label for="Email" class="joqd grey-text">ایمیل شما</label>
+						</div>
+						<div class="joqd input-field">
+							<i class="joqd prefix grey-text gb gb_fingerprint"></i>
+							<input id="Password" type="password" class="joqd input thin-bottom-border grey-border">
+							<label for="Password" class="joqd grey-text">کلمه عبور</label>
+						</div>
+						<div class="recaptcha-wrapper">
+							<span class="joqd grey-text">ربات نیستید؟</span>
+							<div class="g-recaptcha" data-sitekey="6LeVvA8UAAAAALjoTeoU5_n7NDabQcNdZiq5RaQV"></div>
+						</div>
+						<div class="joqd button-wrapper align-center">
+							<button type="submit" class="joqd green green-darken-1-hover white-text medium sharp-corner raised ripple-click ripple-darken button no-border">درخواست ایمیل فعال‌سازی اکانت</button>
+						</div>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</section>
+</main>
+{% endblock %}
+
+{% block footer %}
+{% endblock %}

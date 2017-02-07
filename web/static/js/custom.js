@@ -11,3 +11,12 @@ $(document).ready(function(){
    })
    Navbartoggler()
 })
+
+$(document).ready(function(){
+   $('.joqd.input').each(function(){
+      $(this).input({
+         openLabelColor: 'green-darken-1',
+         openInputColor: 'green'
+      });
+   })
+})
