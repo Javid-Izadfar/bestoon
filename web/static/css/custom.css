@@ -128,6 +128,7 @@ body{
    margin: 0 0 0.75rem}
 #register_form form{
    min-height: 20rem;
+   padding: 12px 8vw 12px 6vw;
    margin-top: -8rem;
    margin-bottom: 4rem}
 #register_form form .recaptcha-wrapper{
@@ -141,6 +142,10 @@ body{
 #register_form form .recaptcha-wrapper span{padding-left: 1.5rem}
 #register_form form .recaptcha-wrapper .g-recaptcha{float: left}
 #register_form form .button-wrapper{padding: 1.5rem 1.5rem 0}
+#register_form form .message-wrapper{padding: 4vw 4vw 4vw 2vw}
+#register_form form .message-wrapper .gb{
+   font-size: 4rem;
+   margin-bottom: 1rem}
 
 /* Header */
 #header_navbar .container{position: relative}
