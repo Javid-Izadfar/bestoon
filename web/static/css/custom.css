@@ -7,6 +7,7 @@ body{
    background-repeat: no-repeat;
    background-size: cover}
 .darken{
+
    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .15) 0%, rgba(0, 0, 0, .15) 100%);
    background-image: linear-gradient(to right, rgba(0, 0, 0, .15) 0%, rgba(0, 0, 0, .15) 100%);
    background-blend-mode: darken}
@@ -20,7 +21,7 @@ body{
 #index_header{
    position: relative;
    padding: 15rem 0}
-#index_header:before{
+#index_header::before{
    content: '';
    height: 100%; width: 100%;
    position: absolute;
@@ -28,11 +29,11 @@ body{
    margin: auto;
    background: #212121;
    background-repeat: no-repeat !important;
-   background: -webkit-radial-gradient(center, ellipse contain, rgba(76,175,79,1) 0%, rgba(58,145,62,.23) 60%, rgba(46,125,50,0) 100%), -moz-radial-gradient(center, ellipse contain, rgba(76,175,79,.5) 0%, rgba(58,145,62,.13) 50%, rgba(46,125,50,0) 90%);
-   background: radial-gradient(center, ellipse contain, rgba(76,175,79,1) 0%, rgba(58,145,62,.23) 60%, rgba(46,125,50,0) 100%), -moz-radial-gradient(center, ellipse contain, rgba(76,175,79,.5) 0%, rgba(58,145,62,.13) 50%, rgba(46,125,50,0) 90%);
+   background: -moz-radial-gradient(center, ellipse contain, rgba(76,175,79,.5) 0%, rgba(58,145,62,.13) 50%, rgba(46,125,50,0) 90%);
+   background: -webkit-radial-gradient(center, ellipse contain, rgba(76,175,79,1) 0%, rgba(58,145,62,.23) 60%, rgba(46,125,50,0) 100%);
+   background: radial-gradient(center, ellipse contain, rgba(76,175,79,1) 0%, rgba(58,145,62,.23) 60%, rgba(46,125,50,0) 100%);
    background-blend-mode: darken;
-   background-position-x: center;
-   background-position-y: -510px;
+   background-position: center -510px;
    -webkit-filter: blur(10px);
            filter: blur(10px)}
 #index_header .bestoon-prev{
@@ -49,6 +50,7 @@ body{
 .info-section{
    padding: 5rem 0 4rem;
    position: relative;
+   background: -moz-linear-gradient(55deg, #e0e0e0 0%, #eeeeee 70%, #eeeeee 100%);
    background: -webkit-linear-gradient(55deg, #e0e0e0 0%, #eeeeee 70%, #eeeeee 100%);
    background: linear-gradient(35deg, #e0e0e0 0%, #eeeeee 70%, #eeeeee 100%);}
 .info-section h2{
@@ -68,7 +70,7 @@ body{
 #index_about{padding: 9rem 0 5rem}
 #index_about::before{
    background: url('../img/jadi.png') no-repeat;
-   background-position-x: 2rem;
+   background-position: 2rem 0;
    background-size: contain;
    position: absolute;
    top: 0; left: 0;
@@ -204,7 +206,7 @@ body{
 /* On Tablet */
 @media screen and (min-width:768px) and (max-width: 991px) {
 
-   #index_header::before{background-position-y: -750px}
+   #index_header::before{background-position: center -750px}
    #index_header{
       padding: 15rem 0 0;
       border-bottom: solid 6rem}
@@ -217,7 +219,7 @@ body{
       left: 0; right: 0;
       padding-top: 66.666%}
 
-   #index_about::before{background-position-x: 0}
+   #index_about::before{background-position: 0}
 
    #index_clients ul li a img {padding: .5em 3em 1em}
 
@@ -227,7 +229,7 @@ body{
 @media screen and (max-width: 767px) {
 
    #index_header::before{
-      background-position-y: -460px;
+      background-position: center -460px;
       -webkit-transform: scale(1.5);
               transform: scale(1.5)}
    #index_header{
@@ -243,9 +245,7 @@ body{
       padding-top: 66.666%}
 
    #index_about{padding: 4rem 0 16rem}
-   #index_about::before{
-      background-position-x: center;
-      background-position-y: bottom}
+   #index_about::before{background-position: center bottom}
 
    #index_clients ul li{padding: .5rem !important}
    #index_clients ul li a img{padding: 0 5vw 1em}
