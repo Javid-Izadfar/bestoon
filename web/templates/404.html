@@ -1,0 +1,22 @@
+{% extends "template.html"%}
+{% load staticfiles %}
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+{% block content %}
+<main>
+	<section id="not_found" class="joqd grey-darken-4 align-center">
+		<span lang="en" class="joqd grey-darken-4-text">404</span>
+		<div class="joqd container">
+			<div class="joqd row">
+				<div class="joqd desktop-12">
+					<p class="joqd h3">خیلی خب! اینجای اینترنت رو هم دیدین!</p>
+					<p class="joqd h4">حالا بدویین و به دوستاتون در موردش بگین ولی بعدش به <a href="" class="joqd link green-text green-darken-1-text-hover">صفحه اصلی</a> برگردین.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+{% endblock %}
+
+{% block footer %}
+{% endblock %}

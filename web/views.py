@@ -209,3 +209,10 @@ def submit_expense(request):
     return JsonResponse({
         'status': 'ok',
     }, encoder=JSONEncoder)  # return {'status':'ok'}
+
+# homepage of System
+
+
+def not_found(request):
+    context = {}
+    return render(request, '404.html', context)
